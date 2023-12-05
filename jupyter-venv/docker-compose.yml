@@ -1,0 +1,8 @@
+version: "3.8"
+services:
+  notebook:
+    build: .
+    ports:
+      - "8888:8888" # You can use other ports. For example, "your-port:8888".
+    volumes:
+      - ./:/home/juser/notebook
